@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  </script>
+</head>
+
+<body style="-webkit-user-select: none; /* Safari */ -moz-user-select: none; /* Firefox */ -ms-user-select: none; /* IE/Edge */ user-select: none;">
+
+<h1>Q19 of 19</h1>
+
+<form action="q1.html">
+
+Write a Java program that analyzes a text string and counts the occurrences of each word.
+<br>
+You can use any Integrated Development Environment (IDE) or online Java compiler to run this program.
+<br>
+You are given a string text containing lowercase words, separated by a space. 
+<br>
+Count how many words show up in the string more than once. 
+<br>
+If the same word shows up three times or more, your counting must be increased just by one.
+<br><br>
+<b>Function:</b> Implement the method countRepeatedWords
+<br>
+<b>Paramters:</b> text (string): lowercase words, each sepearted by space.
+<br>
+<b>Return Value:</b> count (int): number of repeated words.
+<br>
+<b>Examples:</b>
+<table border="1"><tr><td><b>Input</b></td><td><b>Output</b></td></tr>
+<tr><td>apple mango apple mango</td><td>0</td></tr>
+<tr><td>apple mango apple mango apple</td><td>1</td></tr>
+<tr><td>apple mango apple mango apple mango</td><td>2</td></tr>
+<tr><td>apple mango apple mango apple mango apple</td><td>2</td></tr>
+</table>
+<br>
+  <input type="submit" value="First">
+</form>
+
+</body>
+</html>
+

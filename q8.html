@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  </script>
+</head>
+
+<body style="-webkit-user-select: none; /* Safari */ -moz-user-select: none; /* Firefox */ -ms-user-select: none; /* IE/Edge */ user-select: none;">
+
+<h1>Q8 of 19</h1>
+
+<form action="q9.html">
+
+You have an application hosted on AWS created using CloudFormation Templates and Autoscaling. Your application gets a sudden increase in traffic, and this is affecting the application performance. A change of instance type to C5 would resolve the issue. How can this be implemented while minimizing downtime for end users?  <br><br>
+
+<b>Options</b> <br><br>
+<input type="radio" name="n1"> 1. Update the launch configuration in the AWS CloudFormation template with the new C5 instance type. <br>
+Add an UpdatePolicy attribute to your Auto Scaling group that specifies an AutoScalingRolling Update in order to avoid downtime. 
+<br>
+The instances will get automatically updated.  <br><br>
+<input type="radio" name="n1"> 2. Update the launch configuration in the AWS CloudFormation template with the new C5 instance type. 
+<br>
+Run a stack update with the updated template and Auto Scaling will then update the instances one at a time with the new instance type. <br><br>
+<input type="radio" name="n1"> 3. Update the launch configuration in the AWS CloudFormation template with the new C5 instance type. 
+<br>
+Add an UpdatePolicy attribute to the Auto Scaling group that specifies an AutoScalingRollingUpdate. 
+<br>
+Run a stack update with the updated template. 
+ <br><br>
+<input type="radio" name="n1"> 4. Copy the old launch configuration of the template and create a new launch configuration with the C5 instances. 
+<br>
+Update the Auto Scaling group with the new launch configuration. 
+<br>
+Auto Scaling will then update the instance type of all running instances.  <br><br>
+
+  <input type="submit" value="Next">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  </script>
+</head>
+
+<body style="-webkit-user-select: none; /* Safari */ -moz-user-select: none; /* Firefox */ -ms-user-select: none; /* IE/Edge */ user-select: none;">
+
+<h1>Q7 of 19</h1>
+
+<form action="q8.html">
+
+You want to configure your S3 bucket so that it allows all cross origin GET requests. You write a cors configuration for your S3 bucket using the CORS configuration editor. But when you try to save it you get the below error
+
+<br><b>Error:</b> The XML you provided was not well-formed or did not validate against our published schema<br>
+
+<br>
+It seems that you are missing out a required tag. Please complete the CORS configuration shown below by adding this missing tag. <br>
+
+<textarea id="xmlContent" rows="12" cols="100" readonly>
+<?xml version="1.0" encoding="UTF-8"?> 
+<CORSConfiguration xmins="http://s3.amazonaws.com/doc/2006-03-01/"> 
+	<CORSRule> 
+		[-------- Missing tag -------- ] 
+		<AllowedMethod>GET</AllowedMethod> 
+		<MaxAgeSeconds>3000</MaxAgeSeconds> 
+		<AllowedHeader>*</AllowedHeader> 
+		<ExposeHeader>x-amz-server-side-encryption</ExposeHeader> 
+	</CORSRule> 
+</CORSConfiguration> 
+</textarea>
+<br>Please type the full missing instruction (opening tag, value, closing tag) 
+
+ <br><br>
+
+<input type="text" size="50"> <br><br>
+
+  <input type="submit" value="Next">
+</form>
+
+</body>
+</html>
+

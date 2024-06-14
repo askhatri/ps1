@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  </script>
+</head>
+
+<body style="-webkit-user-select: none; /* Safari */ -moz-user-select: none; /* Firefox */ -ms-user-select: none; /* IE/Edge */ user-select: none;">
+
+<h1>Q2 of 19</h1>
+
+<form action="q3.html">
+
+You are the Technical Lead of your project, and your project code is hosted on a CodeCommit repository. To be constantly updated with what code changes are pushed to the repository, you want to receive an email with every code change a developer pushes. From the given options, which one is the best way to set this up?  <br><br>
+
+<b>Options</b> <br><br>
+
+<input type="radio" name="n1">1. Configure a CloudWatch Events rule to send a message to SES. <br>
+SES will then trigger an email sent whenever a user pushes code to the repository. <br><br>
+
+<input type="radio" name="n1">2. Create a new SNS topic and configure it to poll for CodeCommit events at regular intervals. <br>
+You can subscribe to the topic to receive email notifications. <br><br>
+
+<input type="radio" name="n1">3. Configure Notifications using the CodeCommit console. This will create a CloudWatch Events rule which sends notifications to an SNS topic. <br>
+You can subscribe to the topic to receive email notifications. <br><br>
+
+<input type="radio" name="n1">4. Configure a CloudWatch Events rule to send a message to SQS. <br>
+SQS will then trigger an email sent whenever a user pushes code to the repository. <br><br>
+
+  <input type="submit" value="Next">
+</form>
+
+</body>
+</html>
+

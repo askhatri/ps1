@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  </script>
+</head>
+
+<body style="-webkit-user-select: none; /* Safari */ -moz-user-select: none; /* Firefox */ -ms-user-select: none; /* IE/Edge */ user-select: none;">
+
+<h1>Q3 of 19</h1>
+
+<form action="q4.html">
+
+For the AWS IAM policy displayed below, please select the appropriate condition and resource that will allow a user to start/stop/reboot all instances in the Staging Environment in the US N.Virginia region. <br><br>
+
+<img src="q3.png"><br><br>
+
+<b>Options</b> <br><br>
+<input type="radio" name="n1"> 1. Condition : "ec2:ResourceTag": "Environment/Staging" <br>
+Resource: "arn:aws:ec2:us-east-1:123456789012:instance/**  <br><br>
+<input type="radio" name="n1"> 2. Condition: "ec2: ResourceTag/Environment*: "Staging"<br>
+Resource : "arn:aws:ec2:123456789012:us-east-1:instance/** <br><br>
+<input type="radio" name="n1"> 3. Condition: "ec2: Resource Tag/Environment": "Staging"<br>
+Resource : "arn:aws:ec2:us-east-1:123456789012:instance/**  <br><br>
+<input type="radio" name="n1"> 4. Condition : "ec2:ResourceTag": "Environment/Staging"<br>
+Resource : "arn:aws:ec2:123456789012:us-east-1:instance/** <br><br>
+
+  <input type="submit" value="Next">
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+ 
+
+
+
+

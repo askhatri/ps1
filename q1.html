@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  </script>
+</head>
+
+<body style="-webkit-user-select: none; /* Safari */ -moz-user-select: none; /* Firefox */ -ms-user-select: none; /* IE/Edge */ user-select: none;">
+
+<h1>Q1 of 19</h1>
+
+<form action="q2.html">
+
+What is the recommended way to grant to an EC2 machine a read-only access to a specific file located in an S3 bucket? <br><br>
+
+<b>Options</b> <br><br>
+<input type="radio" name="n1"> 1. Create an IAM instance profile and use the predefined "AmazonS3ReadOnlyAccess" policy <br>
+<input type="radio" name="n1"> 2. Associate S3 bucket with EC2 instance <br>
+<input type="radio" name="n1"> 3. Adjust the security group associated with the EC2 instance <br>
+<input type="radio" name="n1"> 4. Add the necessary file permissions to the IAM instance profile associated with the EC2 instance <br><br>
+
+  <input type="submit" value="Next">
+</form>
+
+</body>
+</html>
+
